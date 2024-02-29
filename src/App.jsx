@@ -8,18 +8,18 @@ import DeatailPage from "./pages/DeatailPage";
 
 function App() {
   return (
-    <>
+    <div style={{ backgroundColor: "#a7a7a74e"}}>
       <EmployeeContext>
         <BrowserRouter>
           <Layout>
             <Routes>
               <Route path="/" element={<EmployeeList />} />
-              <Route path="/employee/:id" element={<DeatailPage />}/>
+              <Route path="/employee/:id" element={<DeatailPage />} />
             </Routes>
           </Layout>
         </BrowserRouter>
       </EmployeeContext>
-    </>
+    </div>
   );
 }
 

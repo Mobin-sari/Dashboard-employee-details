@@ -1,4 +1,25 @@
 .avatar {
-    border-radius: 50%;
-    width: 100px;
+  border-radius: 50%;
+  width: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+}
+
+.container div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
