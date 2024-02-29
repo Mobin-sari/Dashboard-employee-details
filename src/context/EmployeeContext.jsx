@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import EmployeeList from "../pages/EmployeeList";
+
+
 import axios from "axios";
 import { BASE_DATA } from "../config/data";
 
@@ -10,14 +11,13 @@ function EmployeeContext({ children }) {
 
   useEffect(() => {
     const fetchBaseData = async () => {
-      const response = await axios.get(`${BASE_DATA}`).then((res) => {
-        return res
+      const responseData = await axios.get(`${BASE_DATA}`).then((res) => {
+        return res;
       });
-      setDataEmployee(response.data)
+      setDataEmployee(responseData.data);
     };
     fetchBaseData();
   }, []);
-
   return (
     <>
       <dataEmployeeContext.Provider value={dataEmployee}>
@@ -32,5 +32,11 @@ const useEmployee = () => {
   return employee;
 };
 
+const useDetailEmployee = (id) => {
+  const employeeData= useContext(dataEmployeeContext);
+  const result = employeeData.find((item) => item.id == id);
+  return result;
+};
+
 export default EmployeeContext;
-export { useEmployee };
+export { useEmployee, useDetailEmployee };
