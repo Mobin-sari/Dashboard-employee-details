@@ -1,0 +1,38 @@
+.container {
+  width: 200px;
+  height: 300px;
+  margin-left: 100px;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.container div {
+  margin-left: 60px;
+  line-height: 8px;
+}
+
+.percent {
+  font-size: 0.8rem;
+  background-color: rgb(202, 235, 202);
+  color: #008000;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.container div span {
+  font-weight: 700;
+}
+
+.date {
+  color: #4e4d4d;
+}
+
+.label {
+  color: #4e4d4d;
+  font-weight: 500;
+}

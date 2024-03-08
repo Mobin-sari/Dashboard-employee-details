@@ -10,19 +10,19 @@ function HeaderDetailPage({ data }) {
       <div>
         <div>
           <div>
-            <p>{data.name}</p>
+            <p className={styles.name}>{data.name}</p>
           </div>
           <div>
-            <p>{data.company.name}</p>
+            <p className={styles.company}>{data.company.name}</p>
           </div>
         </div>
         <div>
           <div>
             <div>
-              <p>{data.username}</p>
+              <p  className={styles.username}>{data.username}</p>
             </div>
             <div>
-              <p>{data.address.city}</p>
+              <p  className={styles.city}>{data.address.city}</p>
             </div>
           </div>
         </div>

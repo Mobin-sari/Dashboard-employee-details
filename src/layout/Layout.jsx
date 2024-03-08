@@ -21,9 +21,11 @@ function Layout({ children }) {
               <p>Employee List</p>
             </div>
           </Link>
-          <div className={styles.headerText}>
-            <p>Contact</p>
-          </div>
+          <Link to="/contact" style={{ textDecoration: "none", color: "#ffff" }}>
+            <div className={styles.headerText}>
+              <p>Contact</p>
+            </div>
+          </Link>
         </div>
         <div>
           <input

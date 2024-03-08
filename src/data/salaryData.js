@@ -8,6 +8,13 @@ const salaryData = [
         weekly: 1500,
       },
     ],
+    percent: [
+      {
+        pyearly:"25%",
+        pmonthly:"12%",
+        pweekly: "8%"
+      }
+    ],
   },
   {
     id: 2,
@@ -17,6 +24,13 @@ const salaryData = [
         monthly: 3000,
         weekly: 2400,
       },
+    ],
+    percent: [
+      {
+        pyearly:"2%",
+        pmonthly:"15%",
+        pweekly: "30%"
+      }
     ],
   },
   {
@@ -28,6 +42,13 @@ const salaryData = [
         weekly: 2000,
       },
     ],
+    percent: [
+      {
+        pyearly:"8%",
+        pmonthly:"16%",
+        pweekly: "3%"
+      }
+    ],
   },
   {
     id: 4,
@@ -37,6 +58,13 @@ const salaryData = [
         monthly: 3500,
         weekly: 700,
       },
+    ],
+    percent: [
+      {
+        pyearly:"5%",
+        pmonthly:"20%",
+        pweekly: "9%"
+      }
     ],
   },
   {
@@ -48,6 +76,13 @@ const salaryData = [
         weekly: 2500,
       },
     ],
+    percent: [
+      {
+        pyearly:"12%",
+        pmonthly:"20%",
+        pweekly: "9%"
+      }
+    ],
   },
   {
     id: 6,
@@ -57,6 +92,13 @@ const salaryData = [
         monthly: 2300,
         weekly: 900,
       },
+    ],
+    percent: [
+      {
+        pyearly:"14%",
+        pmonthly:"45%",
+        pweekly: "9%"
+      }
     ],
   },
   {
@@ -68,6 +110,13 @@ const salaryData = [
         weekly: 700,
       },
     ],
+    percent: [
+      {
+        pyearly:"11%",
+        pmonthly:"10%",
+        pweekly: "15%"
+      }
+    ],
   },
   {
     id: 8,
@@ -77,6 +126,13 @@ const salaryData = [
         monthly: 2400,
         weekly: 1100,
       },
+    ],
+    percent: [
+      {
+        pyearly:"14%",
+        pmonthly:"9%",
+        pweekly: "10%"
+      }
     ],
   },
   {
@@ -88,6 +144,13 @@ const salaryData = [
         weekly: 950,
       },
     ],
+    percent: [
+      {
+        pyearly:"15%",
+        pmonthly:"30%",
+        pweekly: "15%"
+      }
+    ],
   },
   {
     id: 10,
@@ -97,6 +160,13 @@ const salaryData = [
         monthly: 4150,
         weekly: 1850,
       },
+    ],
+    percent: [
+      {
+        pyearly:"10%",
+        pmonthly:"9%",
+        pweekly: "5%"
+      }
     ],
   },
 ];

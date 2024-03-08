@@ -9,50 +9,78 @@ function IntroductionEmployee({ data }) {
     <>
       <div className={styles.container}>
         <div>
-          <img
-            src={`${photo.image}`}
-            alt={data.name}
-            style={{ width: "100px" }}
-          />
+          <img src={`${photo.image}`} alt={data.name} />
         </div>
         <div>
           <div>
-            <p>Full name:</p>
-            <p>{data.name}</p>
+            <div>
+              <span className={styles.label}>Full name:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.name}</span>
+            </div>
           </div>
           <div>
-            <p>Email:</p>
-            <p>{data.email}</p>
+            <div>
+              <span className={styles.label}>Email:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.email}</span>
+            </div>
           </div>
           <div>
-            <p>Phone number:</p>
-            <p>{data.phone}</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <p>Username:</p>
-            <p>{data.username}</p>
-          </div>
-          <div>
-            <p>Website:</p>
-            <p>{data.website}</p>
-          </div>
-          <div>
-            <p>Company:</p>
-            <p>{data.company.name}</p>
+            <div>
+              <span className={styles.label}>Phone number:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.phone}</span>
+            </div>
           </div>
         </div>
         <div>
           <div>
-            <p>City:</p>
-            <p>{data.city}</p>
+            <div>
+              <span className={styles.label}>Username:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.username}</span>
+            </div>
           </div>
           <div>
-            <p>Address:</p>
-            <p>{data.address.street}</p>
-            <p>{data.address.suite}</p>
-            <p>{data.address.zipcode}</p>
+            <div>
+              <span className={styles.label}>Website:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.website}</span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <span className={styles.label}>Company:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.company.name}</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <span className={styles.label}>City:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.address.city}</span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <span className={styles.label}>Address:</span>
+            </div>
+            <div>
+              <span className={styles.data}>{data.address.street}</span>
+              <span className={styles.data}>{data.address.suite}</span>
+              <span className={styles.data}>{data.address.zipcode}</span>
+            </div>
           </div>
         </div>
       </div>

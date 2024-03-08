@@ -8,6 +8,8 @@ import {
   Legend,
 } from "recharts";
 
+import styles from "../styles/chart.module.css"
+
 import { dataChart } from "../data/dataChart";
 
 function Chart({ data }) {
@@ -15,8 +17,8 @@ function Chart({ data }) {
   
   return (
     <>
-      <div>
-        <div>
+      <div className={styles.container}>
+        <div className={styles.header}>
           <div>
             <p>Sales Over view</p>
           </div>
@@ -24,7 +26,7 @@ function Chart({ data }) {
             <p>Yearly</p>
           </div>
         </div>
-        <div>
+        <div className={styles.chart}>
           <LineChart
             width={500}
             height={300}
